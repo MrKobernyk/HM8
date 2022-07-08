@@ -1,0 +1,79 @@
+body {
+    font-family: $font-body;
+    background-color: #fff;
+    color: $secondary-color;
+}
+
+.container {
+
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: $mobile;
+
+    &--header {
+
+        @media screen and (min-width: $tablet) {
+            display: flex;
+        }
+        }
+
+    &--footer 
+        {
+
+        @media screen and (min-width: $tablet) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        @media screen and (min-width: $desktop) {
+            justify-content: start;
+        }
+    }
+
+    &--portfolio {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        }
+
+    @media screen and (min-width: $tablet) {
+        margin-left: auto;
+        margin-right: auto;
+        width: $tablet;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+    }
+}
+
+.titles {
+    margin-bottom: 30px;
+
+    color: $primary-color;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;
+
+        font-size: 36px;
+        line-height: 1.17;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
