@@ -1643,6 +1643,19 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
 }
+.portfolio__type--margin-bottom {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__type--margin-bottom {
+    margin-bottom: 36px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__type--margin-bottom {
+    margin-bottom: 0;
+  }
+}
 .portfolio__card-border {
   padding-top: 20px;
   padding-left: 23px;

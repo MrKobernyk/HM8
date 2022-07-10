@@ -96,7 +96,19 @@
         line-height: 1.88;
         letter-spacing: 0.03em;
         color: $secondary-color;
-    }
+
+        &--margin-bottom {
+            margin-bottom: 0;
+            
+            @media screen and (min-width: $tablet) {            
+                margin-bottom: 36px;}
+
+            @media screen and (min-width: $desktop) {
+                margin-bottom: 0;
+            }
+            }
+        }
+    
 
     &__card-border {
         padding-top: 20px;
@@ -112,4 +124,4 @@
     @media screen and (min-width: $tablet) {
         flex-direction: row;
     }
-}
+    }
