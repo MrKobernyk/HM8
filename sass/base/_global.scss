@@ -2,6 +2,7 @@ body {
     font-family: $font-body;
     background-color: #fff;
     color: $secondary-color;
+    overflow-y: auto;
 }
 
 .no-scroll {
