@@ -2,20 +2,10 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    &__list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-        
-        @media screen and (min-width: $tablet) {
-
-    }
-        }
-
     &__link {
+        width: 100%;
         display: block;
         color: #afb1b8;
-        width: 210px;
         height: 92px;
         border: 1px solid #afb1b8;
         border-radius: 4px;
@@ -47,7 +37,19 @@
         align-items: center;
     }
 
-    // &__list>li:not(:last-child) {
-    //     margin-right: 30px;
-    // }
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+
+    @media screen and (min-width: $tablet) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media screen and (min-width: $desktop) {
+        grid-template-columns: repeat(6, 1fr);
+    }
 }

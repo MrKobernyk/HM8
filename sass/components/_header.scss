@@ -1,5 +1,5 @@
 .header {
-    
+    position: relative;
     border-bottom: 1px solid #ececec;
 
     &--borderless {
@@ -8,63 +8,17 @@
 
 }
 
-.menu {
-
-    &__button {
-        top: 22px;
-        right: 23px;
-        margin: 0;
-        padding: 0;
-        border: none;
-        background-color: transparent;
-
-        @media screen and (min-width: $tablet) {
-            display: none;
-        }
-    }
-
-        &__button svg {
-            fill: $primary-color;
-
-            &:hover,
-            &:focus {
-                fill: $accent-color;
-                }
-    }
-
-}
-
-.menu__button .menu__icon-cross {
-    opacity: 0;
-}
-
-.menu__button.is-open .menu__icon-cross {
-    opacity: 1;
-}
-
-.menu__button.is-open .menu__icon-lines {
-    opacity: 0;
-}
-
-.header__mobile {
-        display: flex;
-        justify-content: space-between;
-}
-
 .site-nav {
     
     &__list {
         display: none;
         align-items: center;
+        
 
         @media screen and (min-width: $tablet) {
             display: flex;
             gap: 50px;
         }
-
-        // @media screen and (min-width: $desktop) {
-
-        // }
     }
 
     &__link {
@@ -119,6 +73,7 @@
 
 .contact {
     align-items: center;
+    display: flex;
 
     &--mrgn-left {
         margin-left: auto;
