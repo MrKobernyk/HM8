@@ -7,7 +7,7 @@
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/hero/hero_background_mobile-min.jpg);
+        url(../images/hero/hero_background_mobile-min.jpg);
     background-color: $background-footer-hero-color;
     background-position: center;
     background-repeat: no-repeat;
@@ -69,18 +69,18 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../../images/hero/hero_background_mobile_2x-min.jpg);
+            url(../images/hero/hero_background_mobile_2x-min.jpg);
         }
 
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../../images/hero/hero_background_tablet-min.jpg);
+                url(../images/hero/hero_background_tablet-min.jpg);
                 
                 @media (min-device-pixel-ratio: 2),
                     (min-resolution: 192dpi),
                     (min-resolution: 2dppx) {
                         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                            url(../../images/hero/hero_background_tablet_2x-min.jpg);
+                            url(../images/hero/hero_background_tablet_2x-min.jpg);
                     }
     }
 
@@ -89,14 +89,14 @@
         padding-bottom: 200px;
 
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../../images/hero/hero_background-min.jpg);
+                url(../images/hero/hero_background-min.jpg);
                 background-size: cover;
 
                 @media (min-device-pixel-ratio: 2),
                     (min-resolution: 192dpi),
                     (min-resolution: 2dppx) {
                         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                            url(../../images/hero/hero_background_2x-min.jpg);
+                            url(../images/hero/hero_background_2x-min.jpg);
                     }
     }
 
