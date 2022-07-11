@@ -45,8 +45,8 @@
         border: 0;
         min-width: 200px;
         
-        color: $primary-color;
-        background-color: $inactive-button-color;
+        color: #fff;
+        background-color: $accent-color;
         font-family: $font-body;
         font-weight: 700;
         font-size: 16px;
@@ -55,7 +55,7 @@
         
         cursor: pointer;
         
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 100ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &__button:hover,
@@ -64,6 +64,11 @@
         background-color: #188ce8;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
+
+        &__button:active {
+            background-color: #1269af;
+            color: rgba(255, 255, 255, 0.842);
+        }
 
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
